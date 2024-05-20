@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "gapps2",
   "version": "0.1.0",
   "private": true,
@@ -6,12 +7,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "seedApps": "node ./seeds/apps.js"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
+    "mongodb": "^6.6.2",
+    "mongoose": "^8.4.0",
+    "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.3"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "eslint": "^8",
